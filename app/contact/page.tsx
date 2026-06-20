@@ -28,7 +28,7 @@ export default function ContactPage() {
             </div>
 
             <div className="mt-3 text-2xl font-semibold">
-              your@email.com
+              neuralhorizon1@email.com
             </div>
           </div>
 
