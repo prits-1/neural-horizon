@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -21,6 +22,22 @@ export const metadata: Metadata = {
     "Technology",
     "Future Tech",
   ],
+  authors: [
+    {
+      name: "Neural Horizon",
+    },
+  ],
+  creator: "Neural Horizon",
+  metadataBase: new URL("https://neural-horizon.vercel.app"),
+  openGraph: {
+    title: "Neural Horizon",
+    description:
+      "Exploring the future of artificial intelligence through insights, analysis, and technology news.",
+    url: "https://neural-horizon.vercel.app",
+    siteName: "Neural Horizon",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -35,6 +52,8 @@ export default function RootLayout({
       >
         {children}
       </body>
+
+      <GoogleAnalytics gaId="G-NYDW5BHMZ1" />
     </html>
   );
 }
